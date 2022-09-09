@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-
-/** 
+/**
  * main - printing digits from 0 to 10
  *
  * Return: Always o(success)
