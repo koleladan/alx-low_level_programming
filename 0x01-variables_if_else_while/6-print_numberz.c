@@ -4,7 +4,7 @@
  * main - print all single digit numbers base from 0 to 10
  * only using putchar without char variables
  *
- * REturn: Always 0(success)
+ * Return: Always 0(success)
  */
 int main(void)
 {
