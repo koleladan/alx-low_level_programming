@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 
 /**
  * main - Entry point
@@ -17,4 +17,5 @@ int main(void)
 		_putchar(str[ch]);
 	_putchar('\n');
 
-return (0);
+	return(0);
+}
