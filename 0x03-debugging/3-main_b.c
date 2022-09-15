@@ -9,7 +9,7 @@ nclude < stdio.h >
  * @year: year
  * Return: void
  */
-int convert_day (int month, int day )
+int convert_day(int month, int day)
 {
 	switch (month)
 	{
