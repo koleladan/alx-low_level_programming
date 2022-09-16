@@ -3,7 +3,6 @@
 
 
 /**
-
  * print_square - function
  * @size: is an operand number
  * Return: void
