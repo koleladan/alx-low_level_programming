@@ -1,16 +1,28 @@
 #include "main.h"
 
+
+
 /**
- * main - swaps the values of two integers
- *
- * Return: Always 0
+ * swap_int - function to swap the value of two integers
+ * @a: is the first integer
+ * @b: is the 2nd integer
+ * Return: void
  */
 
 void swap_int(int *a, int *b)
-{
-	int temp;
 
-	temp = *a;
-	*a = *b;
-	*b = temp;
+{
+
+	int c, d;
+
+
+
+	c = *a;
+
+	d = *b;
+
+	*b = c;
+
+	*a = d;
+
 }
