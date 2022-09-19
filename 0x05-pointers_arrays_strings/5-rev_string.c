@@ -1,43 +1,39 @@
 #include "main.h"
 
-#include <stdio.h>
-
 #include <string.h>
 
-
-
 /**
- * puts2 - function to print every other character of a string and newline
- * @str: input string
+ * rev_string - function to reverse a string
+ * @s: input string
  * Return: void
  */
 
-void puts2(char *str)
+void rev_string(char *s)
 
 {
 
 	int n;
 
-	int a;
+	int a, c, stlen;
 
+	char b;
 
+	char str[1000];
 
-	a = strlen(str);
-
-	n = 0;
-
-	while (n < a)
-
+	a = 0;
+	n = strlen(s) - 1;
+	while (n >= 0)
 	{
-
-		if (n % 2 == 0)
-
-			putchar(str[n]);
-
-		n++;
-
+		b = s[n];
+		str[a] = b;
+		--n;
+		++a;
 	}
-
-	putchar('\n');
-
+	c = 0;
+	stlen = strlen(s);
+	while (c < stlen)
+	{
+		*(s + c) = *(str + c);
+		c++;
+	}
 }
