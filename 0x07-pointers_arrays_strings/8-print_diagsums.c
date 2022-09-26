@@ -14,7 +14,6 @@
 
 void print_diagsums(int *a, int size)
 {
-
 	int b, prev;
 
 	unsigned int d, e;
