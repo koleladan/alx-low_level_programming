@@ -1,24 +1,28 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
+
+
 
 /**
- * main - fills memory with a constant byte
- * _memset - fills memory with a constant byte
- * @s: memory space to be filled
- * @b: byte to fill with
- * @n: number of spaces to fill
- * Return: always 0
+ * _memset - function to fill the first n bytes of
+ * memory area pointed to by s with constant byte b
+ * @s: dereferenced pointer to a character
+ * @b: constant byte character
+ * @n: number of bytes of memory to be filled
+ * Return: pointer to memory area s
  */
 
 char *_memset(char *s, char b, unsigned int n)
-{
-	unsigned int i;
 
-	for (i = 0; i < n; i++)
-	{
-		*(s + i) = b;
-	}
+{
+
+	unsigned int a;
+
+
+
+	for (a = 0; a < n; a++)
+
+		s[a] = b;
 
 	return (s);
+
 }
