@@ -9,3 +9,4 @@ int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 void _putchar(char c);
 int sqrt_evaluate(int, int);
+int check_prime(unsigned int, unsigned int);
