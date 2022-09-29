@@ -4,8 +4,8 @@
 
 /**
  * _puts_recursion - function to print a string and add a newline
- * @s: string to be printe
- * Return:void
+ * @s: string to be printed
+ * Return: void
  */
 
 void _puts_recursion(char *s)
@@ -15,12 +15,15 @@ void _puts_recursion(char *s)
 	if (*s == '\0')
 
 	{
-		_putchar(*(s + 0));
-		_puts_recursion((s + 1));
-	}
-	else
-	{
+
 		_putchar('\n');
+
 		return;
+
 	}
+
+	_putchar(*s);
+
+	_puts_recursion(s + 1);
+
 }
