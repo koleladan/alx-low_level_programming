@@ -1,36 +1,50 @@
 #ifndef MAIN_H
+
 #define MAIN_H
 
 
 
-#include <stdarg.h>
+/* include function for itoa, strlen and strdup */
 
-/**
- * struct printr - holds information on symbol and corresponding function
- * @symbol: symbol standing to perform an operation
- * @print: pointer to function that peforms the printing
- * Description: struct to link symbols and functions
- */
+#include <stdlib.h>
 
-typedef struct printr
-{
-	char *symbol;
+#include <string.h>
 
-	int (*print)(va_list args);
-
-} printer;
+#include <stdio.h>
 
 
 
-int _strlen(char *);
+/* prototype for _putchar function */
 
-int _printf(const char *format, ...);
+int _putchar(char c);
 
-int print_char(va_list arg);
+/*function to convert binary to unsigned int. Returns converted number*/
 
-int print_str(va_list arg);
+unsigned int binary_to_uint(const char *b);
 
-int print_perc(va_list arg);
+/* function to print binary from decimal using bitwise operators */
+
+void print_binary(unsigned long int n);
+
+/* function to get value of a bit at given index. Return 1, 0 or -1 */
+
+int get_bit(unsigned long int n, unsigned int index);
+
+/* function to set value of a bit to 1 at given index, Return 1 or -1 */
+
+int set_bit(unsigned long int *n, unsigned int index);
+
+/* function to clear value of bit at given index; Return 1 or -1 */
+
+int clear_bit(unsigned long int *n, unsigned int index);
+
+/* function to get amount of bits to be flipped to get a number from another */
+
+unsigned int flip_bits(unsigned long int n, unsigned long int m);
+
+/* gets the endianness of the machine */
+
+int get_endianness(void);
 
 
 
